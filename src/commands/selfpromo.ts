@@ -25,7 +25,7 @@ export const selfpromo = (
   }
   //Checks to see if the link is valid and sends message.
   if (
-    /https:\/\/(www\.)?((twitch\.tv\/[a-zA-Z0-9_]+)|(youtube\.com\/watch\?v=[a-zA-Z\-\_0-9]{11})|(youtu\.be\/[a-zA-Z\-\_0-9]{11})|(mixer\.com\/[a-zA-Z0-9]+)|(behance\.net\/gallery\/\d*?\/[0-9a-zA-Z\-]+?))/.test(
+    /https:\/\/(www\.)?((twitch\.tv\/[a-zA-Z0-9_]+)|(youtube\.com\/watch\?v=[a-zA-Z\-\_0-9]{11})|(youtu\.be\/[a-zA-Z\-\_0-9]{11})|(mixer\.com\/[a-zA-Z0-9]+)|(behance\.net\/gallery\/\d*?\/[0-9a-zA-Z\-]+?))$/.test(
       args[0]
     ) &&
     args[0].indexOf("@everyone")
